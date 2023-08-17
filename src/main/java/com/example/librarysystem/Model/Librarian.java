@@ -24,7 +24,7 @@ public class Librarian {
     @Column(columnDefinition = "varchar(20) NOT NULL unique")
     private String username;
     @NotEmpty(message = "should not be empty")
-    @Pattern(regexp ="^(?=.*[A-Za-z])(?=.*)[A-Za-z]{8,}$")
+    @Pattern(regexp = "^[a-z0-9] ")
     private  String password;
     @Email
     @Column(columnDefinition = "varchar(20) NOT NULL unique")
