@@ -24,7 +24,7 @@ public class Book {
     @Column(columnDefinition = "varchar(15) NOT NULL")
     private String author;
     @NotEmpty(message = "should not be empty")
-    @Column(columnDefinition = "varchar(10) NOT NULL")
+    @Column(columnDefinition = "varchar(10) NOT NULL check(category = 'Academic' or category = 'Mystery' or category = 'Novel')")
     private String category;
 
     @NotNull(message = "should not null")

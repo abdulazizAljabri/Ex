@@ -25,7 +25,7 @@ public class Librarian {
     @NotEmpty(message = "should not be empty")
     private  String password;
     @Email
-    @Column(columnDefinition = "varchar(20) NOT NULL unique check")
+    @Column(columnDefinition = "varchar(20) NOT NULL unique")
     private String email;
 
 }
