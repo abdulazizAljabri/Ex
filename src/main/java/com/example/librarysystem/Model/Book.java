@@ -28,10 +28,12 @@ public class Book {
     private String category;
 
     @NotNull(message = "should not null")
+    @Column(columnDefinition = "int not null")
     private Integer isbn;
 
     @NotNull(message = "should not null")
     @Min(value=50)
+    @Column(columnDefinition = "int not null")
     private Integer numberOfPages;
 
 }

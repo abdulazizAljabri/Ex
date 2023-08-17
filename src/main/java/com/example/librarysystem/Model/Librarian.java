@@ -25,6 +25,7 @@ public class Librarian {
     private String username;
     @NotEmpty(message = "should not be empty")
     @Pattern(regexp = "^[a-z0-9] ")
+    @Column(columnDefinition = "int not null")
     private  String password;
     @Email
     @Column(columnDefinition = "varchar(20) NOT NULL unique")
